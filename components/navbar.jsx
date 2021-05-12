@@ -1,92 +1,72 @@
 import React from "react";
 import styles from "../styles/Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className={`navbar navbar-expand-lg p-3 ${styles.nav_custom}`}>
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <h5 className="text-white">Concept Design</h5>
-          </a>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
-            <i style={{ color: "white" }} className="fas fa-bars"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" style={{zIndex:1111}} id="navbarSupportedContent">
-            <ul
-              className="navbar-nav me-auto mb-2 mb-lg-0 text-white"
-              style={{ marginLeft: "auto" }}
-            >
-              <li className="nav-item mx-2">
-                <a  className={`nav-link ${styles.nav_text}`} aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a  className={`nav-link ${styles.nav_text}`} href="#">
-                  About
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a  className={`nav-link ${styles.nav_text}`} href="#">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a  className={`nav-link ${styles.nav_text}`} href="#">
-                  Contact
-                </a>
-              </li>
-            </ul>
-
-            <div className="continer d-flex align-items-center">
-              <a
-                class="btn btn-primary  btn-floating mx-2"
-                style={{ backgroundColor: "transparent" }}
-                href="#!"
-                role="button"
-              >
-                <i class="fab fa-instagram" />
-              </a>
-              <a
-                class="btn btn-primary  btn-floating mx-2"
-                style={{ backgroundColor: "transparent" }}
-                href="#!"
-                role="button"
-              >
-                <i class="fab  fa-facebook-f" />
-              </a>
-              <a
-                class="btn btn-primary  btn-floating mx-2"
-                style={{ backgroundColor: "transparent" }}
-                href="#!"
-                role="button"
-              >
-                <i class="fab fa-twitter" />
-              </a>
-              <a
-                class="btn btn-primary  btn-floating mx-2"
-                style={{ backgroundColor: "transparent" }}
-                href="#!"
-                role="button"
-              >
-                <i class="fab fa-linkedin-in" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav className={`mb-1 navbar navbar-expand-lg ${styles.nav_custom}`}>
+      <Link
+        className="navbar-brand text-white"
+        style={{ color: "white" }}
+        href="/"
+      >
+        <h5 className="text-white pt-2" style={{ cursor: "pointer" }}>
+          Concept Design
+        </h5>
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-333"
+        aria-controls="navbarSupportedContent-333"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
+        <ul className="navbar-nav ml-auto text-white">
+          <li className={`nav-item  mx-4 mt-2 active ${styles.nav_link}`}>
+            <Link className={`nav-link`} href="/">
+              Home
+            </Link>
+          </li>
+          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+            <Link className={`nav-link`} href="#">
+              About
+            </Link>
+          </li>
+          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+            <Link className={`nav-link`} href="#">
+              Services
+            </Link>
+          </li>
+          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+            <Link className={`nav-link`} target="_blank" href="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+        <ul className="navbar-nav ml-auto nav-flex-icons">
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light">
+              <i className="fab fa-twitter text-white  mx-2"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light">
+              <i className="fab fa-facebook text-white  mx-2"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light">
+              <i className="fab fa-instagram text-white  mx-2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 

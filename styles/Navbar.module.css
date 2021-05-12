@@ -1,9 +1,12 @@
 .nav_custom {
-  background: rgba(255, 255, 255, 0.3) !important;
-  width: 100%;
+  background-image: linear-gradient(to right top, #d1cdfb, #c5d1ff, #bad4ff, #aed8ff, #a4dbff); 
+   width: 100%;
   top: 0px;
   position: fixed !important;
   z-index: 999;
   padding-top: 10px;
 }
 
+.nav_link a:hover{
+  color: white !important;
+}
