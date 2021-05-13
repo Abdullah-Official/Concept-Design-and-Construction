@@ -1,10 +1,11 @@
 .nav_custom {
-  background-image: linear-gradient(to right top, #d1cdfb, #c5d1ff, #bad4ff, #aed8ff, #a4dbff); 
-   width: 100%;
+  background-color: #00225a ;
+  width: 100%;
   top: 0px;
   position: fixed !important;
   z-index: 999;
   padding-top: 10px;
+  padding: 20px;
 }
 
 .nav_link a:hover{

@@ -5,6 +5,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import AOS from "aos";
 import { useEffect } from "react";
 import Section1 from "../components/section1";
+import Section2 from "../components/section2";
 
 export default function Home() {
   useEffect(() => {
@@ -33,21 +34,38 @@ export default function Home() {
           scrollingSpeed={1000}
           navigation={true}
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
+          slidesNavigation = {false}
+          controlArrows={false}
+          afterLoad= { function (destination) {
+            var g_interval;
+            clearInterval(g_interval);
+            
+            // 1000 milliseconds lapse
+            const lapse = 5000;
+            
+            if(destination.item.querySelectorAll('.fp-slides').length){
+              g_interval = setInterval(function () {
+                fullpage_api.moveSlideRight();
+              }, lapse);
+            }}}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div  className={`section ${styles.s1}`}>
+                <div className={`section`}>
+                  {/* <Section1 /> */}
+                  <div className={`slide ${styles.s1}`}> 
                   <Section1 />
+                   </div>
+                   <div className={`slide ${styles.s2}`}> 
+                  <Section1 />
+                   </div>
+                   <div className={`slide ${styles.s3}`}> 
+                  <Section1 />
+                   </div>
                 </div>
-                <div className={`section ${styles.s2}`}>
-                  <h1 className={`${styles.heading}`}>Section 2 </h1>
-                </div>
-                <div className={`section ${styles.s3}`}>
-                  <h1 className={`${styles.heading}`}>Section 3 </h1>
-                </div>
-                <div className={`section ${styles.s4}`}>
-                  <h1 className={`${styles.heading}`}>Section 4 </h1>
-                </div>
+                <div className={`section`} style={{backgroundColor:'black', height:'100vh'}}> 
+                  <Section2 />
+                   </div>
               </ReactFullpage.Wrapper>
             );
           }}

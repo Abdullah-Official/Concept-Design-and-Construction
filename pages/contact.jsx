@@ -49,7 +49,7 @@ const Contact = () => {
               <div className="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <div className="form-header blue accent-1">
+                    <div className={`form-header accent-1 ${styles.form_header}`}>
                       <h3 className="mt-1 text-white text-center py-3 mb-3">
                         <i className="fas fa-envelope"></i> Write to us:
                       </h3>
@@ -103,7 +103,7 @@ const Contact = () => {
                         <label for="form-text">Send message</label>
                       </div>
                       <div className="text-center">
-                        <button type="submit" className="btn btn-light-blue">
+                        <button type="submit" style={{backgroundColor:'#00225a'}} className="btn text-white">
                           Submit
                         </button>
                       </div>
@@ -127,21 +127,21 @@ const Contact = () => {
                 <div className="row text-center" data-aos="fade-up">
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-map-marker-alt fa-2x text-primary"></i>
+                      <i className="fas py-3 fa-map-marker-alt fa-2x " style={{color:'#00225a'}}></i>
                     </a>
                     <p>New York, 94126</p>
                     <p className="mb-md-0">United States</p>
                   </div>
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-phone fa-2x text-primary"></i>
+                      <i className="fas py-3 fa-phone fa-2x " style={{color:'#00225a'}}></i>
                     </a>
                     <p>+ 01 234 567 89</p>
                     <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
                   </div>
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-envelope  fa-2x text-primary"></i>
+                      <i className="fas py-3 fa-envelope  fa-2x " style={{color:'#00225a'}}></i>
                     </a>
                     <p>Tamur_shaikh87@yahoo.com</p>
                     <p className="mb-0">sale@gmail.com</p>

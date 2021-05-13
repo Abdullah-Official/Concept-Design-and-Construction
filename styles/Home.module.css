@@ -1,26 +1,12 @@
 .s1 {
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
+  background-image: url("../public/images/section1-slide1.jpg");
   height: 100vh !important;
   object-fit: cover;
 }
 .s2 {
-  background-image: linear-gradient(
-    to right top,
-    #051637,
-    #0a2a60,
-    #0e408b,
-    #1158ba,
-    #1270eb
-  );
+  background-image: url("../public/images/section1-slide2.jpg");
   background-size: cover;
   object-fit: cover;
   height: 100vh !important;
@@ -30,31 +16,18 @@
   text-align: center;
 }
 .s3 {
-  background-image: linear-gradient(
-    to right top,
-    #053037,
-    #005a62,
-    #00888c,
-    #00b8b4,
-    #12ebd8
-  );
+  background-image: url("../public/images/section1-slide3.jpg");
   background-size: cover;
   object-fit: cover;
   height: 100vh !important;
 }
-.s4 {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #002265,
-    #002894,
-    #0027c1,
-    #1212eb
-  );
-  background-size: cover;
-  object-fit: cover;
-  height: 100vh !important;
+.section1_subTxt{
+  color:#fff;
+  font-weight: 400 !important;
+  font-size: 20px;
+  width: 70%;
 }
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: #fff !important;
@@ -80,6 +53,16 @@
     margin-top: 20px;
     margin-left: 10px !important;
   }
+  .section1_subTxt{
+    font-size: 16px;
+    width: 100% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .btns_section1 {
+    width: 100% !important ;
+    display: block;
+  }
 }
 @media (max-width: 1008px) {
   .btns_section1 {
@@ -88,10 +71,26 @@
   }
   .btn_contact {
     margin-top: 20px;
+  } 
+}
+@media(max-width: 995px){
+  .hero_sect1{
+    flex: none;
+  }
+  .btn_contact {
+    margin-top: 8px;
+  }
+}
+@media(min-width:768px){
+  .hero_sect1{
+    max-width: 90% !important;
   }
 }
 @media (max-width: 280px) {
   .heading_section1 {
     font-size: 28px !important;
+  }
+  .section1_subTxt{
+    font-size: 16px !important;
   }
 }
