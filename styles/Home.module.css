@@ -49,6 +49,9 @@
   object-fit: contain !important;
 }
 
+.sec2_main{
+  margin-top: 89px !important;
+}
 
 
 #fp-nav ul li a span,
@@ -78,6 +81,18 @@
   .section1_subTxt{
     font-size: 16px;
     width: 100% !important;
+  }
+  .text_sec2{
+    font-size: 13px !important;
+  }
+ 
+}
+@media(max-width: 320px){
+  .section1_subTxt{
+    font-size: 11px !important;
+  }
+  .heading_section1 {
+    font-size: 24px !important;
   }
 }
 @media (max-width: 1024px) {
@@ -118,12 +133,6 @@
 }
 
 @media (max-width: 280px) {
-  .heading_section1 {
-    font-size: 28px !important;
-  }
-  .section1_subTxt{
-    font-size: 16px !important;
-  }
   .heading_sec2{
     font-size: 22px !important;
   }

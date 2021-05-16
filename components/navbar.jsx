@@ -5,17 +5,17 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className={`mb-1 navbar navbar-expand-lg ${styles.nav_custom}`}>
+    <nav className={`mb-1 scrolling-navbar navbar navbar-expand-lg ${styles.nav_custom}`}>
       <Link
-        className="navbar-brand text-white"
-        style={{ color: "white" }}
+        className="navbar-brand text-white cursor-pointer"
+        style={{ color: "white", cursor:'pointer' }}
         href="/"
       >
         <Image
           src="/images/logo.svg"
           height={60}
           width={60}
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "contain", }}
         />
       </Link>
       <button
@@ -75,6 +75,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+ 
   );
 };
 

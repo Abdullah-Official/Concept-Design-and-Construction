@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const Section2 = () => {
   return (
-    <div className={`${styles.sec2_main} container`}>
+    <div className={`${styles.sec2_main} container-fluid`}>
       <div className="container ">
         <section className="dark-grey-text">
           <div className="row pr-lg-5">
@@ -25,22 +25,19 @@ const Section2 = () => {
                   Company Overview
                 </h3>
 
-                <p className="text-black">
+                <p className={`text-black ${styles.text_sec2}`}>
                   Lorem ipsum dolor sit amet consectetur adip elit. Maiores
                   deleniti explicabo voluptatem quisquam nulla asperiores
                   aspernatur aperiam voluptate et consectetur minima delectus,
                   fugiat eum soluta blanditiis adipisci, velit dolore magnam.
-                  Lorem ipsum dolor sit amet consectetur adip elit. Maiores
-                  deleniti explicabo voluptatem quisquam nulla asperiores
-                  aspernatur aperiam voluptate et consectetur minima delectus,
-                  fugiat eum soluta blanditiis adipisci, velit dolore magnam.
+                  Lorem ipsum dolor sit amet consectetur adip elit.
                 </p>
 
                 <button
                   type="button"
                   className={`btn mx-0 text-white ${styles.btn_about}`}
                 >
-                  Get Started
+                  Learn More
                 </button>
               </div>
             </div>

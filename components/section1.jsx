@@ -25,7 +25,7 @@ const Section1 = () => {
                 height: 2,
                 backgroundColor: "#fff",
                 width: "65%",
-                marginBottom: 30,
+                marginBottom: 26,
               }}
             ></div>
             <p
