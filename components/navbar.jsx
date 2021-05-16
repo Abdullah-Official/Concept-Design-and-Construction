@@ -11,11 +11,11 @@ const Navbar = () => {
         style={{ color: "white" }}
         href="/"
       >
-        <Image 
-        src="/images/logo.png"
-        height={70}
-        width={70}
-        style={{objectFit:'contain'}}
+        <Image
+          src="/images/logo.svg"
+          height={70}
+          width={70}
+          style={{ objectFit: "contain" }}
         />
       </Link>
       <button
@@ -29,7 +29,11 @@ const Navbar = () => {
       >
         <i class="fas fa-bars text-white"></i>
       </button>
-      <div className="collapse navbar-collapse" style={{textAlign:'center'}} id="navbarSupportedContent-333">
+      <div
+        className="collapse navbar-collapse"
+        style={{ textAlign: "center" }}
+        id="navbarSupportedContent-333"
+      >
         <ul className="navbar-nav ml-auto text-white">
           <li className={`nav-item  mx-4 mt-1 active ${styles.nav_link}`}>
             <Link className={`nav-link`} href="/">
