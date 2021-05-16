@@ -3,12 +3,10 @@
   background-size: cover !important;
   background-image: url("../public/images/section1-slide1.jpg");
   height: 100vh !important;
-  object-fit: cover;
 }
 .s2 {
   background-image: url("../public/images/section1-slide2.jpg");
   background-size: cover;
-  object-fit: cover;
   height: 100vh !important;
 }
 .heading {
@@ -52,7 +50,9 @@
 }
 
 
-
+.sec2_main{
+  margin-top: 50px !important;
+}
 
 
 #fp-nav ul li a span,

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -10,9 +11,12 @@ const Navbar = () => {
         style={{ color: "white" }}
         href="/"
       >
-        <h5 className="text-white pt-2" style={{ cursor: "pointer" }}>
-          Concept Design
-        </h5>
+        <Image 
+        src="/images/logo.png"
+        height={70}
+        width={70}
+        style={{objectFit:'contain'}}
+        />
       </Link>
       <button
         className="navbar-toggler"
@@ -27,22 +31,22 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" style={{textAlign:'center'}} id="navbarSupportedContent-333">
         <ul className="navbar-nav ml-auto text-white">
-          <li className={`nav-item  mx-4 mt-2 active ${styles.nav_link}`}>
+          <li className={`nav-item  mx-4 mt-1 active ${styles.nav_link}`}>
             <Link className={`nav-link`} href="/">
               Home
             </Link>
           </li>
-          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+          <li className={`nav-item  mx-4 mt-1  ${styles.nav_link}`}>
             <Link className={`nav-link`} href="#">
               About
             </Link>
           </li>
-          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+          <li className={`nav-item  mx-4 mt-1  ${styles.nav_link}`}>
             <Link className={`nav-link`} href="#">
               Services
             </Link>
           </li>
-          <li className={`nav-item  mx-4 mt-2  ${styles.nav_link}`}>
+          <li className={`nav-item  mx-4 mt-1  ${styles.nav_link}`}>
             <Link className={`nav-link`} target="_blank" href="/contact">
               Contact
             </Link>

@@ -36,12 +36,13 @@ export default function Home() {
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
           slidesNavigation={false}
           controlArrows={false}
+          scrollOverflow={true}
           afterLoad={function (destination) {
             var g_interval;
             clearInterval(g_interval);
 
             // 1000 milliseconds lapse
-            const lapse = 10000;
+            const lapse = 5000;
 
             if (destination.item.querySelectorAll(".fp-slides").length) {
               g_interval = setInterval(function () {

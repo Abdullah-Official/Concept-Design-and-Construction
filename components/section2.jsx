@@ -11,7 +11,7 @@ const Section2 = () => {
             <div className={`col-md-7 ${styles.sec2_div1}`}>
               <div className="view">
                 <Image
-                  src="/images/sec2-img.png"
+                  src="/images/sec2-img.jpg"
                   alt="Picture of the author"
                   width={550}
                   height={400}
