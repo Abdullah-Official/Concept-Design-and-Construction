@@ -50,10 +50,6 @@
 }
 
 
-.sec2_main{
-  margin-top: 50px !important;
-}
-
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -132,6 +128,6 @@
     font-size: 22px !important;
   }
   .sec2_main{
-    margin-top: 15px !important;
+    margin-top: 82px !important;
   }
 }

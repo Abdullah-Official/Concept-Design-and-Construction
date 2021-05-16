@@ -13,8 +13,8 @@ const Navbar = () => {
       >
         <Image
           src="/images/logo.svg"
-          height={70}
-          width={70}
+          height={60}
+          width={60}
           style={{ objectFit: "contain" }}
         />
       </Link>
