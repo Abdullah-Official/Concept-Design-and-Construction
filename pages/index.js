@@ -36,7 +36,6 @@ export default function Home() {
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
           slidesNavigation={false}
           controlArrows={false}
-          scrollOverflow={true}
           afterLoad={function (destination) {
             var g_interval;
             clearInterval(g_interval);
