@@ -41,7 +41,7 @@ export default function Home() {
             clearInterval(g_interval);
             
             // 1000 milliseconds lapse
-            const lapse = 5000;
+            const lapse = 10000;
             
             if(destination.item.querySelectorAll('.fp-slides').length){
               g_interval = setInterval(function () {
@@ -63,7 +63,7 @@ export default function Home() {
                   <Section1 />
                    </div>
                 </div>
-                <div className={`section`} style={{backgroundColor:'black', height:'100vh'}}> 
+                <div className={`section ${styles.section2}`}> 
                   <Section2 />
                    </div>
               </ReactFullpage.Wrapper>

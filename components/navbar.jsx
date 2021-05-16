@@ -25,7 +25,7 @@ const Navbar = () => {
       >
         <i class="fas fa-bars text-white"></i>
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <div className="collapse navbar-collapse" style={{textAlign:'center'}} id="navbarSupportedContent-333">
         <ul className="navbar-nav ml-auto text-white">
           <li className={`nav-item  mx-4 mt-2 active ${styles.nav_link}`}>
             <Link className={`nav-link`} href="/">

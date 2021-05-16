@@ -27,6 +27,33 @@
   font-size: 20px;
   width: 70%;
 }
+.btn_contact{
+  background-image: linear-gradient(to top, #080d23, #1b2a44, #2e4967, #406a8b, #528db0);
+}
+.btn_about{
+  background-image: linear-gradient(to top, #080d23, #1b2a44, #2e4967, #406a8b, #528db0);
+}
+
+.section2{
+  background-image: url("../public/images/sec2-bg.jpg");
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh !important;
+}
+
+.heading_sec2{
+  color: #053a93;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.img_sec2{
+  object-fit: contain !important;
+}
+
+
+
+
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -37,7 +64,6 @@
 }
 .btns_section1 {
   width: 60% !important;
-  justify-content: space-around;
   display: flex;
   margin-top: 40px;
 }
@@ -86,11 +112,26 @@
     max-width: 90% !important;
   }
 }
+@media(max-width:767px){
+  .sec2_div1{
+    display: none !important;
+  }
+  .heading_sec2{
+    font-size: 28px !important;
+  }
+}
+
 @media (max-width: 280px) {
   .heading_section1 {
     font-size: 28px !important;
   }
   .section1_subTxt{
     font-size: 16px !important;
+  }
+  .heading_sec2{
+    font-size: 22px !important;
+  }
+  .sec2_main{
+    margin-top: 15px !important;
   }
 }

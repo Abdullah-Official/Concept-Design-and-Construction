@@ -7,10 +7,16 @@ const Section1 = () => {
     <div>
       <div className="container-fluid">
         <div className="row">
-          <div className={`col-md-6 col-lg-6 col-sm-10 col-10 offset-1 ${styles.hero_sect1}`}>
+          <div
+            className={`col-md-6 col-lg-6 col-sm-10 col-10 offset-1 ${styles.hero_sect1}`}
+          >
             <h1
               className={`text-white  ${styles.heading_section1} `}
-              style={{ fontSize: 65, fontFamily:'Poppins', fontWeight:'bold' }}
+              style={{
+                fontSize: 65,
+                fontFamily: "Poppins",
+                fontWeight: "bold",
+              }}
             >
               {`From Concept \n to Creation`}
             </h1>
@@ -22,24 +28,34 @@ const Section1 = () => {
                 marginBottom: 30,
               }}
             ></div>
-            <p className={`${styles.section1_subTxt}`} style={{ color: "#fff", fontWeight:'bold', fontSize:20,width:'70%' }}>
+            <p
+              className={`${styles.section1_subTxt}`}
+              style={{
+                color: "#fff",
+                fontWeight: "bold",
+                fontSize: 20,
+                width: "70%",
+              }}
+            >
               We provide professional construction services and turn your dream
               into a beautiful reality.{" "}
             </p>
             <div className={`${styles.btns_section1}`}>
               <button
                 type="button"
-                className={`btn text-white `}
-                style={{ width: 200, borderRadius: 100, backgroundColor:'#00225a' }}
+                className={`btn text-white ${styles.btn_about}`}
+                style={{ width: 200, borderRadius: 100 }}
               >
                 About us
               </button>
               <button
                 type="button"
                 className={`btn text-white ${styles.btn_contact}`}
-                style={{ width: 200, borderRadius: 100, backgroundColor:'#00225a'  }}
+                style={{ width: 200, borderRadius: 100 }}
               >
-                <Link href="/contact" style={{width:'100%', height:'100%', }}>Contact us</Link>
+                <Link href="/contact" style={{ width: "100%", height: "100%" }}>
+                  Contact us
+                </Link>
               </button>
             </div>
           </div>
