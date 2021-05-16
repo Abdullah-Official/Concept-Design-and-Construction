@@ -124,9 +124,9 @@
   }
 }
 @media(max-width:767px){
-  .sec2_div1{
+  /* .sec2_div1{
     display: none !important;
-  }
+  } */
   .heading_sec2{
     font-size: 28px !important;
   }

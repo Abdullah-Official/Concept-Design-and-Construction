@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import styles from "../styles/Home.module.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
 
@@ -36,7 +36,7 @@ export default function Home() {
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
           slidesNavigation={false}
           controlArrows={false}
-          scrollOverflow={true}
+          responsiveWidth = {900}
           afterLoad={function (destination) {
             var g_interval;
             clearInterval(g_interval);
@@ -52,10 +52,10 @@ export default function Home() {
           }}
           render={({ state, fullpageApi }) => {
             return (
-              <ReactFullpage.Wrapper className={`fp-responsive`}>
-                <div className={`section`}>
+              <ReactFullpage.Wrapper>
+                <div className={`section fp-auto-height-responsive`}>
                   {/* <Section1 /> */}
-                  <div className={`slide  ${styles.s1}`}>
+                  <div className={`slide   ${styles.s1}`}>
                     <Section1 />
                   </div>
                   <div className={`slide ${styles.s2}`}>
@@ -65,7 +65,7 @@ export default function Home() {
                     <Section1 />
                   </div>
                 </div>
-                <div className={`section ${styles.section2}`}>
+                <div className={`section  fp-auto-height-responsive ${styles.section2}`}>
                   <Section2 />
                 </div>
               </ReactFullpage.Wrapper>
