@@ -34,38 +34,39 @@ export default function Home() {
           scrollingSpeed={1000}
           navigation={true}
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
-          slidesNavigation = {false}
+          slidesNavigation={false}
           controlArrows={false}
-          afterLoad= { function (destination) {
+          afterLoad={function (destination) {
             var g_interval;
             clearInterval(g_interval);
-            
+
             // 1000 milliseconds lapse
             const lapse = 10000;
-            
-            if(destination.item.querySelectorAll('.fp-slides').length){
+
+            if (destination.item.querySelectorAll(".fp-slides").length) {
               g_interval = setInterval(function () {
                 fullpage_api.moveSlideRight();
               }, lapse);
-            }}}
+            }
+          }}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
                 <div className={`section`}>
                   {/* <Section1 /> */}
-                  <div className={`slide ${styles.s1}`}> 
-                  <Section1 />
-                   </div>
-                   <div className={`slide ${styles.s2}`}> 
-                  <Section1 />
-                   </div>
-                   <div className={`slide ${styles.s3}`}> 
-                  <Section1 />
-                   </div>
+                  <div className={`slide ${styles.s1}`}>
+                    <Section1 />
+                  </div>
+                  <div className={`slide ${styles.s2}`}>
+                    <Section1 />
+                  </div>
+                  <div className={`slide ${styles.s3}`}>
+                    <Section1 />
+                  </div>
                 </div>
-                <div className={`section ${styles.section2}`}> 
+                <div className={`section ${styles.section2}`}>
                   <Section2 />
-                   </div>
+                </div>
               </ReactFullpage.Wrapper>
             );
           }}
