@@ -4,7 +4,10 @@ import styles from "../styles/Home.module.css";
 
 const Section2 = () => {
   return (
-    <div style={{marginBottom:40}} className={`${styles.sec2_main} container-fluid`}>
+    <div
+      style={{ marginBottom: 40 }}
+      className={`${styles.sec2_main} container-fluid`}
+    >
       <div className="container ">
         <section className="dark-grey-text">
           <div className="row pr-lg-5">
