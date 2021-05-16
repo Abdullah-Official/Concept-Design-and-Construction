@@ -46,7 +46,14 @@ const Section2 = () => {
                   fugiat eum soluta blanditiis adipisci, velit dolore magnam.
                   Lorem ipsum dolor sit amet consectetur adip elit.
                 </p>
-                 <p className={`text-black ${styles.text_sec2}`}>
+                <p className={`text-black ${styles.text_sec2}`}>
+                  Lorem ipsum dolor sit amet consectetur adip elit. Maiores
+                  deleniti explicabo voluptatem quisquam nulla asperiores
+                  aspernatur aperiam voluptate et consectetur minima delectus,
+                  fugiat eum soluta blanditiis adipisci, velit dolore magnam.
+                  Lorem ipsum dolor sit amet consectetur adip elit.
+                </p>
+                <p className={`text-black ${styles.text_sec2}`}>
                   Lorem ipsum dolor sit amet consectetur adip elit. Maiores
                   deleniti explicabo voluptatem quisquam nulla asperiores
                   aspernatur aperiam voluptate et consectetur minima delectus,

@@ -52,10 +52,10 @@ export default function Home() {
           }}
           render={({ state, fullpageApi }) => {
             return (
-              <ReactFullpage.Wrapper>
+              <ReactFullpage.Wrapper className={`fp-responsive`}>
                 <div className={`section`}>
                   {/* <Section1 /> */}
-                  <div className={`slide ${styles.s1}`}>
+                  <div className={`slide  ${styles.s1}`}>
                     <Section1 />
                   </div>
                   <div className={`slide ${styles.s2}`}>
