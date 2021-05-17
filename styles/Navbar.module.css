@@ -1,6 +1,5 @@
 .nav_custom {
-  background-image: linear-gradient(to right top, #080d23, #111b34, #1a2746, #223459, #2b426d, #2e5380, #306593, #3277a6, #3591b9, #43acc9, #5ac6d6, #79e0e1);
-  width: 100%;
+  background-image: linear-gradient(to right top, #0d418e, #0069b1, #0091cc, #02b8e2, #5be0f4);  width: 100%;
   top: 0px;
   position: fixed !important;
   z-index: 999;

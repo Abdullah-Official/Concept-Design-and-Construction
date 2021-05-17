@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const Section1 = () => {
   return (
-    <div style={{marginTop:118, marginBottom:30}}>
+    <div style={{ marginTop: 118, marginBottom: 30 }}>
       <div className="container-fluid">
         <div className="row">
           <div

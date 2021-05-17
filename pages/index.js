@@ -3,9 +3,10 @@ import Navbar from "../components/navbar";
 import styles from "../styles/Home.module.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import AOS from "aos";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
+import Section3 from "../components/section3";
 
 export default function Home() {
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function Home() {
           navigationTooltips={["Home", "About us", "Services", "Contact"]}
           slidesNavigation={false}
           controlArrows={false}
-          responsiveWidth = {900}
+          responsiveWidth={900}
           afterLoad={function (destination) {
             var g_interval;
             clearInterval(g_interval);
@@ -65,8 +66,11 @@ export default function Home() {
                     <Section1 />
                   </div>
                 </div>
-                <div className={`section ${styles.section2}`}>
+                <div className={`section jarallax ${styles.section2}`}>
                   <Section2 />
+                </div>
+                <div className={`section jarallax ${styles.section3}`}>
+                  <Section3 />
                 </div>
               </ReactFullpage.Wrapper>
             );
