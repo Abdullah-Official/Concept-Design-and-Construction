@@ -26,10 +26,24 @@
   width: 70%;
 }
 .btn_contact {
-  background-image: linear-gradient(to right top, #0f51b3, #0069bb, #007cba, #008db3, #309cac);
+  background-image: linear-gradient(
+    to right top,
+    #0f51b3,
+    #0069bb,
+    #007cba,
+    #008db3,
+    #309cac
+  );
 }
 .btn_about {
-  background-image: linear-gradient(to right top, #0f51b3, #0069bb, #007cba, #008db3, #309cac);
+  background-image: linear-gradient(
+    to right top,
+    #0f51b3,
+    #0069bb,
+    #007cba,
+    #008db3,
+    #309cac
+  );
 }
 
 .section2 {
@@ -60,24 +74,26 @@
   height: 100vh !important;
 }
 
-.section3_card1_img{
+.section3_card1_img {
   background-image: url("../public/images/sec3_card_img1.jpg");
   object-fit: contain !important;
   height: 100%;
   width: 100%;
 }
-.section3_card2_img{
+.section3_card2_img {
   background-image: url("../public/images/sec3_card_img2.jpg");
   object-fit: contain !important;
   height: 100%;
   width: 100%;
 }
 
-
-
-
-
-
+.section4 {
+  background-image: url("https://pngimg.com/uploads/building/building_PNG65.png");
+  background-size: cover;
+  object-fit: contain !important;
+  height: 100vh !important;
+  background-position: center;
+}
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {

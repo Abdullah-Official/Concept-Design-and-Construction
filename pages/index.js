@@ -7,6 +7,7 @@ import { useEffect} from "react";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
 import Section3 from "../components/section3";
+import Section4 from "../components/section4";
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +35,7 @@ export default function Home() {
           licenseKey={"YOUR_KEY_HERE"}
           scrollingSpeed={1000}
           navigation={true}
-          navigationTooltips={["Home", "About us", "Services", "Contact"]}
+          navigationTooltips={["Home", "About us", "Services", "News and Insights"]}
           slidesNavigation={false}
           controlArrows={false}
           responsiveWidth={900}
@@ -43,7 +44,7 @@ export default function Home() {
             clearInterval(g_interval);
 
             // 1000 milliseconds lapse
-            const lapse = 5000;
+            const lapse = 7000;
 
             if (destination.item.querySelectorAll(".fp-slides").length) {
               g_interval = setInterval(function () {
@@ -71,6 +72,9 @@ export default function Home() {
                 </div>
                 <div className={`section jarallax ${styles.section3}`}>
                   <Section3 />
+                </div>
+                <div className={`section jarallax ${styles.section4}`}>
+                  <Section4 />
                 </div>
               </ReactFullpage.Wrapper>
             );
