@@ -46,7 +46,9 @@ const Section1 = () => {
                 className={`btn text-white ${styles.btn_about}`}
                 style={{ width: 200, borderRadius: 100 }}
               >
-                About us
+               <Link href="/about" style={{ width: "100%", height: "100%" }}>
+                  About us
+                </Link>
               </button>
               <button
                 type="button"

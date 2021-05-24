@@ -2,136 +2,128 @@ import Navbar from "../components/navbar";
 import styles from "../styles/About.module.css";
 
 function About() {
-    return (
-      <div>
-        {/* Navbar  */}
-        <Navbar />
+  return (
+    <div>
+      {/* Navbar  */}
+      <Navbar />
 
-        {/* Hero Section  */}
-        <div className={`card card-image ${styles.jumbortron_about}`}>
-          <div className="text-white text-center rgba-stylish-strong py-5 mt-4 px-4">
-            <div className="py-5">
-              <h5 className="h5 orange-text">
-                <i className="fas fa-truck"></i> Who are we ?
-              </h5>
-              <h2 className="card-title h2 my-4 py-2">
-                Concept Design & Constructors
+      {/* Hero Section  */}
+      <div className={`card card-image ${styles.jumbortron_about}`}>
+        <div className="text-white text-center rgba-stylish-strong py-5 mt-4 px-4">
+          <div className="py-5">
+            <h3 className="h3 orange-text"> Who we are ?</h3>
+            <h2 className="card-title h2 my-4 py-2">
+              Concept Design & Constructors
+            </h2>
+            <p className="mb-4 pb-2 px-md-5 text-center mx-md-5">
+              Concept Design & Constructor is a premier construction firm in
+              Texas with an ambition to serve the infrastructure needs of
+              clients throughout the state.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Company Overview  */}
+
+      <div className="container-fluid my-5 py-5 ">
+        <section className="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+          <div className="row">
+            <div className="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+              <img
+                src="https://ae01.alicdn.com/kf/HTB11uN5hA9WBuNjSspeq6yz5VXax.jpg"
+                // className="img-rounded"
+                alt=""
+                style={{
+                  width: "100%",
+                  height: 330,
+                  objectFit: "cover",
+                  borderRadius: 17,
+                }}
+              />
+            </div>
+
+            <div className="col-lg-6 mb-4 mb-lg-0  d-flex  justify-content-center flex-column">
+              <h2 className="font-weight-bold" style={{ color: "#053a93" }}>
+                Company Overview
               </h2>
-              <p className="mb-4 pb-2 px-md-5 mx-md-5">
+
+              <p className="font-weight-normal text-primary">
+                Making your vision come true, that is what we do
+              </p>
+
+              <p className="text-muted" style={{ textAlign: "justify" }}>
                 Concept Design & Constructor is a premier construction firm in
                 Texas with an ambition to serve the infrastructure needs of
-                clients throughout the state.
+                clients throughout the state. From residential, commercial,
+                industrial to everything in between, we approach each project
+                with a laser focus on design with remarkable attention to detail
+                and a passion for excellence. We take pride in the challenge of
+                finding better solutions to design & construction and we are not
+                satisfied until our client is 100% satisfied with all aspects.
               </p>
-              <a className="btn peach-gradient">
-                <i className="fas fa-hammer left"></i> Our Services
+
+              <a className="font-weight-bold" href="#section2">
+                Learn more<i className="fas fa-angle-right ml-2"></i>
               </a>
             </div>
           </div>
-        </div>
+        </section>
+      </div>
 
-        {/* Company Overview  */}
+      {/* History, Vision, Mission  */}
 
-        <div className="container-fluid my-5 py-5 ">
-          <section className="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+      <div id="section2" className={`${styles.parallax_part}`}>
+        <div className={`container py-5 my-5 `}>
+          <div className="card mb-4">
+            <div className="card-header white">
+              <h4
+                className="font-weight-bold mb-0"
+                style={{ color: "#053a93" }}
+              >
+                Core Values
+              </h4>
+            </div>
+            <div className="card-body">
+              <p className="card-text">
+                Concept Design & Constructor was built around these core values
+                that are considered to be the bedrock of our company.
+              </p>
+              <h5 className="font-weight-bold py-3 orange-text">
+                Diligence • Expertise • Quality • Safety • Integrity • Success
+              </h5>
+              <p className="card-text">
+                When you partner with Concept Design & Constructor, you join
+                hands with a highly-respected, solid team of professionals who
+                thrive in a culture of diligence, expertise, quality, safety,
+                integrity and success. Our clients have their questions answered
+                and their concerns met. Whether large or small, all jobs are
+                prepared with a high level of attention and care, on time and on
+                budget.
+              </p>
+              <p className="card-text">
+                By focusing on our core values in all that we do, we provide
+                results that exceed the expectations of our clients.
+              </p>
+              <small
+                className="blue-text font-weight-bold float-right"
+                href="#"
+              >
+                ~ Concept Design
+              </small>
+            </div>
+          </div>
+          <section className="p-md-3 ">
             <div className="row">
-              <div className="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                <img
-                  src="https://ae01.alicdn.com/kf/HTB11uN5hA9WBuNjSspeq6yz5VXax.jpg"
-                  // className="img-rounded"
-                  alt=""
-                  style={{
-                    width: "100%",
-                    height: 330,
-                    objectFit: "cover",
-                    borderRadius: 17,
-                  }}
-                />
-              </div>
-
-              <div className="col-lg-6 mb-4 mb-lg-0  d-flex  justify-content-center flex-column">
-                <h2 className="font-weight-bold">Company Overview</h2>
-
-                <p className="font-weight-normal text-primary">
-                  Making your vision come true, that is what we do
-                </p>
-
-                <p className="text-muted" style={{ textAlign: "justify" }}>
-                  Concept Design & Constructor is a premier construction firm in
-                  Texas with an ambition to serve the infrastructure needs of
-                  clients throughout the state. From residential, commercial,
-                  industrial to everything in between, we approach each project
-                  with a laser focus on design with remarkable attention to
-                  detail and a passion for excellence. We take pride in the
-                  challenge of finding better solutions to design & construction
-                  and we are not satisfied until our client is 100% satisfied
-                  with all aspects.
-                </p>
-
-                <a className="font-weight-bold" href="#=">
-                  Learn more<i className="fas fa-angle-right ml-2"></i>
-                </a>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        {/* History, Vision, Mission  */}
-   
-       <div className={`${styles.parallax_part}`}>
-       <div className={`container py-5 my-5 `}>
-          <section className="p-md-3 mx-md-5">
-            <div className="row mb-5 d-flex align-items-center">
               <div className="col-lg-6 col-md-6">
-                <div className="card">
+                <div className="card mb-4">
                   <div className="card-header white">
-                    <h4 className="font-weight-bold mb-0">History</h4>
-                  </div>
-                  <div className="card-body">
-                    <p className="card-text">
-                      Concept Design & Constructor is the sister concern of “SS
-                      Builders and developers Pvt. Ltd.” that has been operating
-                      successfully for more than 20 years in Pakistan, providing
-                      elite className construction services to its clients. Having
-                      proved its worth in its home country, the group decided to
-                      move on to serve the construction customers in vicinity of
-                      the state of Texas, USA.
-                    </p>
-                    <small className="blue-text font-weight-bold float-right" href="#">
-                     ~ Concept Design
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-4">
-                <div className="view overlay rounded z-depth-1">
-                  <img
-                    src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29uc3RydWN0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                    className="img-fluid"
-                    alt="Sample project image"
-                  />
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-5 d-flex align-items-center justify-content-end">
-              <div className="col-md-6 col-lg-4">
-                <div className="view overlay rounded z-depth-1">
-                  <img
-                    src="https://lh3.googleusercontent.com/proxy/oB4McX7MovC8sBwlOiaekIQPbxeW1h7pwKoygrl5Yy-SiaPuOxuCFXTkn2PTcF729qhpKwaagaCbLAme2zGh0cQMkITH-UNlz20_Ur_xTUksiB9rLL8qxRCbl9R8BlTRWQ"
-                    className="img-fluid"
-                    alt="Sample project image"
-                  />
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6">
-                <div className="card">
-                  <div className="card-header white">
-                    <h4 className="font-weight-bold mb-0">Vision</h4>
+                    <h4
+                      className="font-weight-bold mb-0"
+                      style={{ color: "#053a93" }}
+                    >
+                      Vision
+                    </h4>
                   </div>
                   <div className="card-body">
                     <p className="card-text">
@@ -140,18 +132,24 @@ function About() {
                       A company that our customers want to work with and our
                       employees are to proud to work for.
                     </p>
-                    <small className="blue-text font-weight-bold float-right" href="#">
-                     ~ Concept Design
+                    <small
+                      className="blue-text font-weight-bold float-right"
+                      href="#"
+                    >
+                      ~ Concept Design
                     </small>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row d-flex align-items-center">
               <div className="col-lg-6 col-md-6">
-                <div className="card">
+                <div className="card mb-4">
                   <div className="card-header white">
-                    <h4 className="font-weight-bold mb-0">Mission</h4>
+                    <h4
+                      className="font-weight-bold mb-0"
+                      style={{ color: "#053a93" }}
+                    >
+                      Mission
+                    </h4>
                   </div>
                   <div className="card-body">
                     <ul>
@@ -173,31 +171,103 @@ function About() {
                         </p>
                       </li>
                     </ul>
-                    <small className="blue-text font-weight-bold float-right" href="#">
-                     ~ Concept Design
+                    <small
+                      className="blue-text font-weight-bold float-right"
+                      href="#"
+                    >
+                      ~ Concept Design
                     </small>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-4">
-                <div className="view overlay rounded z-depth-1">
-                  <img
-                    src="https://ca-times.brightspotcdn.com/dims4/default/27473b4/2147483647/strip/true/crop/4000x2250+0+209/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F67%2F0b%2F66c87105430a8bdb5ab9c889e144%2Fgettyimages-1218753869.jpg"
-                    className="img-fluid"
-                    alt="Sample project image"
-                  />
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
                 </div>
               </div>
             </div>
           </section>
         </div>
-       </div>
-
       </div>
-    );
+
+
+                {/* Teams Section  */}
+
+                <div className="container my-5">
+
+
+  <section className="team-section text-center dark-grey-text">
+
+    <h3 className="font-weight-bold pb-2 mb-4">Our Amazing Team</h3>
+    <p className="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+      eum porro a pariatur veniam.</p>
+
+    <div className="row">
+
+      <div className="col-lg-4 col-md-4 mb-4">
+        <div className="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" className="rounded-circle img-fluid z-depth-1"
+            alt="Sample avatar"/>
+        </div>
+        <h5 className="font-weight-bold mt-4 mb-3">Anna Williams</h5>
+        <p className="text-uppercase blue-text"><strong>Graphic designer</strong></p>
+        <p className="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+          adipisci sed quia non numquam modi tempora eius.</p>
+        <ul className="list-unstyled mb-0">
+          <a className="p-2 fa-lg fb-ic">
+            <i className="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <a className="p-2 fa-lg tw-ic">
+            <i className="fab fa-twitter blue-text"> </i>
+          </a>
+          <a className="p-2 fa-lg ins-ic">
+            <i className="fab fa-instagram blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+      <div className="col-lg-4 col-md-4 mb-4">
+        <div className="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" className="rounded-circle img-fluid z-depth-1"
+            alt="Sample avatar"/>
+        </div>
+        <h5 className="font-weight-bold mt-4 mb-3">John Doe</h5>
+        <p className="text-uppercase blue-text"><strong>Web developer</strong></p>
+        <p className="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
+          doloremque rem laudantium totam aperiam.</p>
+        <ul className="list-unstyled mb-0">
+          <a className="p-2 fa-lg fb-ic">
+            <i className="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <a className="p-2 fa-lg ins-ic">
+            <i className="fab fa-instagram blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+
+      <div className="col-lg-4 col-md-4 mb-4">
+        <div className="avatar mx-auto">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" className="rounded-circle img-fluid z-depth-1"
+            alt="Sample avatar"/>
+        </div>
+        <h5 className="font-weight-bold mt-4 mb-3">Tom Adams</h5>
+        <p className="text-uppercase blue-text"><strong>Backend developer</strong></p>
+        <p className="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui consectetur
+          totam officia voluptates perferendis voluptatibus aut.</p>
+        <ul className="list-unstyled mb-0">
+          <a className="p-2 fa-lg fb-ic">
+            <i className="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <a className="p-2 fa-lg ins-ic">
+            <i className="fab fa-github blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+
+</div>
+
+    </div>
+  );
 }
 
-export default About
+export default About;

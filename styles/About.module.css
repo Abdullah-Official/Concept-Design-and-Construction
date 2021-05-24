@@ -2,17 +2,21 @@
     background-image: url('../public/images/about-jumb.jpg');
     background-size: cover !important;
     background-position: center !important;
+    
 }
 .parallax_part{
         /* The image used */
-        /* background-image: url("https://news.cgtn.com/news/3d3d414e7959444e34457a6333566d54/img/3bceb13395d6448798f7842c128ca312/3bceb13395d6448798f7842c128ca312.jpg"); */
+        background-image: url("../public//images//Parallax.jpg");
       
         /* Set a specific height */
-        min-height: 100vh;
+        min-height: 90vh;
       
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
