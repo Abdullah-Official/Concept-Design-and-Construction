@@ -2,23 +2,26 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import styles from "../styles/Home.module.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import AOS from "aos";
-import { useEffect} from "react";
 import Section1 from "../components/section1";
 import Section2 from "../components/section2";
 import Section3 from "../components/section3";
 import Section4 from "../components/section4";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      easing: "ease-out-cubic",
+      duration: 1000,
+      // once: true,
+      // offset: 50,
     });
   }, []);
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Concept Design & Constructors</title>
         <script>
           {function () {
             $("#fullpage").fullpage({

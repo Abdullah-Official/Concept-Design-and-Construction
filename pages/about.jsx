@@ -1,22 +1,30 @@
 import HeroSection from "../components/hero-section";
 import Navbar from "../components/navbar";
 import styles from "../styles/About.module.css";
+import Head from "next/head";
 
 function About() {
   return (
     <div>
+      <Head>
+        <title>About us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {/* Navbar  */}
       <Navbar />
 
       {/* Hero Section  */}
-      <HeroSection title="Who we are ?"/>
+      <HeroSection title="Who we are ?" />
 
       {/* Company Overview  */}
 
       <div className="container-fluid my-5 py-5 ">
         <section className="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
           <div className="row">
-            <div className="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center" data-aos="zoom-in-up">
+            <div
+              className="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center"
+              data-aos="zoom-in-up"
+            >
               <img
                 src="https://ae01.alicdn.com/kf/HTB11uN5hA9WBuNjSspeq6yz5VXax.jpg"
                 // className="img-rounded"
@@ -30,8 +38,12 @@ function About() {
               />
             </div>
 
-            <div className="col-lg-6 mb-4 mb-lg-0  d-flex  justify-content-center flex-column" >
-              <h2 className="font-weight-bold" style={{ color: "#053a93" }} data-aos="fade-up">
+            <div className="col-lg-6 mb-4 mb-lg-0  d-flex  justify-content-center flex-column">
+              <h2
+                className="font-weight-bold"
+                style={{ color: "#053a93" }}
+                data-aos="fade-up"
+              >
                 Company Overview
               </h2>
 
@@ -39,7 +51,12 @@ function About() {
                 Making your vision come true, that is what we do
               </p>
 
-              <p className="text-muted" style={{ textAlign: "justify" }} data-aos="fade-up" data-aos-delay="100">
+              <p
+                className="text-muted"
+                style={{ textAlign: "justify" }}
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 Concept Design & Constructor is a premier construction firm in
                 Texas with an ambition to serve the infrastructure needs of
                 clients throughout the state. From residential, commercial,
@@ -50,7 +67,12 @@ function About() {
                 satisfied until our client is 100% satisfied with all aspects.
               </p>
 
-              <a className="font-weight-bold" href="#section2" data-aos="zoom-in-right" data-aos-delay="100">
+              <a
+                className="font-weight-bold"
+                href="#section2"
+                data-aos="zoom-in-right"
+                data-aos-delay="100"
+              >
                 Learn more<i className="fas fa-angle-right ml-2"></i>
               </a>
             </div>
@@ -62,8 +84,12 @@ function About() {
 
       <div id="section2" className={`${styles.parallax_part}`}>
         <div className={`container py-5 my-5 `}>
-          <div className="card mb-4" data-aos-anchor-placement="center-bottom" data-aos="fade-up">
-            <div className="card-header white" >
+          <div
+            className="card mb-4"
+            data-aos-anchor-placement="center-bottom"
+            data-aos="fade-up"
+          >
+            <div className="card-header white">
               <h4
                 className="font-weight-bold mb-0"
                 style={{ color: "#053a93" }}
@@ -103,7 +129,7 @@ function About() {
           <section className="p-md-3 ">
             <div className="row">
               <div className="col-lg-6 col-md-6">
-                <div className="card mb-4" data-aos-anchor-placement="bottom-center" data-aos="fade-up">
+                <div className="card mb-4" data-aos="zoom-in-up">
                   <div className="card-header white">
                     <h4
                       className="font-weight-bold mb-0"
@@ -129,7 +155,7 @@ function About() {
                 </div>
               </div>
               <div className="col-lg-6 col-md-6">
-                <div className="card mb-4" data-aos-anchor-placement="bottom-center" data-aos="fade-up">
+                <div className="card mb-4" data-aos="zoom-in-up">
                   <div className="card-header white">
                     <h4
                       className="font-weight-bold mb-0"
@@ -176,8 +202,14 @@ function About() {
 
       <div className="container my-5">
         <section className="team-section text-center dark-grey-text">
-          <h3 className="font-weight-bold pb-2 mb-4" data-aos="zoom-in-up">Our Amazing Team</h3>
-          <p className="text-muted w-responsive mx-auto mb-5" data-aos="flip-up" data-aos-delay="200">
+          <h3 className="font-weight-bold pb-2 mb-4" data-aos="zoom-in-up">
+            Our Amazing Team
+          </h3>
+          <p
+            className="text-muted w-responsive mx-auto mb-5"
+            data-aos="flip-up"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             error amet numquam iure provident voluptate esse quasi, veritatis
             totam voluptas nostrum quisquam eum porro a pariatur veniam.

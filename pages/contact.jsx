@@ -3,11 +3,12 @@ import styles from "../styles/Contact.module.css";
 import Navbar from "../components/navbar";
 import emailjs from "emailjs-com";
 import AOS from "aos";
+import Head from "next/head";
 
 const Contact = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
   const sendEmail = (e) => {
@@ -32,24 +33,42 @@ const Contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div>
         <Navbar />
       </div>
       <div style={{ marginTop: 130 }}>
-        <div className="container mt-5" >
+        <div className="container mt-5">
           <section className="dark-grey-text mb-5">
-            <h3 className="font-weight-bold text-center mb-4" data-aos="zoom-out">Contact Us</h3>
-            <p className="text-center w-responsive mx-auto pb-5" data-aos="fade-don">
+            <h3
+              className="font-weight-bold text-center mb-4"
+              data-aos="zoom-out"
+            >
+              Contact Us
+            </h3>
+            <p
+              className="text-center w-responsive mx-auto pb-5"
+              data-aos="fade-don"
+            >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
               error amet numquam iure provident voluptate esse quasi, veritatis
               totam voluptas nostrum quisquam eum porro a pariatur veniam.
             </p>
 
             <div className="row">
-              <div className="col-lg-5 mb-lg-0 pb-lg-3 mb-4" data-aos-anchor-placement="top-center" data-aos="fade-up">
+              <div
+                className="col-lg-5 mb-lg-0 pb-lg-3 mb-4"
+                data-aos-anchor-placement="top-center"
+                data-aos="fade-up"
+              >
                 <div className="card">
                   <div className="card-body">
-                    <div className={`form-header accent-1 ${styles.form_header}`}>
+                    <div
+                      className={`form-header accent-1 ${styles.form_header}`}
+                    >
                       <h3 className="mt-1 text-white text-center py-3 mb-3">
                         <i className="fas fa-envelope"></i> Write to us:
                       </h3>
@@ -103,7 +122,11 @@ const Contact = () => {
                         <label for="form-text">Send message</label>
                       </div>
                       <div className="text-center">
-                        <button type="submit" style={{backgroundColor:'#00225a'}} className="btn text-white">
+                        <button
+                          type="submit"
+                          style={{ backgroundColor: "#00225a" }}
+                          className="btn text-white"
+                        >
                           Submit
                         </button>
                       </div>
@@ -127,21 +150,30 @@ const Contact = () => {
                 <div className="row text-center" data-aos="fade-in">
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-map-marker-alt fa-2x " style={{color:'#00225a'}}></i>
+                      <i
+                        className="fas py-3 fa-map-marker-alt fa-2x "
+                        style={{ color: "#00225a" }}
+                      ></i>
                     </a>
                     <p>New York, 94126</p>
                     <p className="mb-md-0">United States</p>
                   </div>
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-phone fa-2x " style={{color:'#00225a'}}></i>
+                      <i
+                        className="fas py-3 fa-phone fa-2x "
+                        style={{ color: "#00225a" }}
+                      ></i>
                     </a>
                     <p>+ 01 234 567 89</p>
                     <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
                   </div>
                   <div className="col-md-4">
                     <a>
-                      <i className="fas py-3 fa-envelope  fa-2x " style={{color:'#00225a'}}></i>
+                      <i
+                        className="fas py-3 fa-envelope  fa-2x "
+                        style={{ color: "#00225a" }}
+                      ></i>
                     </a>
                     <p>Tamur_shaikh87@yahoo.com</p>
                     <p className="mb-0">sale@gmail.com</p>

@@ -4,11 +4,15 @@ import Navbar from "../components/navbar";
 import OtherServices from "../components/other-services";
 import ServicesCommon from "../components/services-common";
 import { ServicesData } from "../Data/services-data";
-import styles from "../styles/Services.module.css";
+import Head from "next/head";
 
 function Services() {
   return (
     <div>
+      <Head>
+        <title>Services</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {/* Navbar  */}
       <Navbar />
 
@@ -17,7 +21,7 @@ function Services() {
 
       {/* Features Section  */}
 
-    <Features />
+      <Features />
 
       {/* Services  */}
       <div className="mt-5">
@@ -28,7 +32,11 @@ function Services() {
         >
           Services we provide
         </h2>
-        <p data-aos="fade-up" data-aos-delay="100" className="text-center mx-auto w-responsive mb-5">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-center mx-auto w-responsive mb-5"
+        >
           Construction is a full service construction company offering building
           solutions from start to finish. Our staff has been operating on USA
           for last many years.
@@ -45,10 +53,9 @@ function Services() {
         />
       ))}
 
-        {/* Other Services  */}
+      {/* Other Services  */}
 
-        <OtherServices />
-
+      <OtherServices />
     </div>
   );
 }

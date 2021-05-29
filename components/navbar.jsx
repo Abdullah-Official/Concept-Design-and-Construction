@@ -15,7 +15,7 @@ const Navbar = () => {
           src="/images/logo.svg"
           height={60}
           width={60}
-          style={{ objectFit: "contain", }}
+          style={{ objectFit: "contain", cursor:'pointer' }}
         />
       </Link>
       <button
