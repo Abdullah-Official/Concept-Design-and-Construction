@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "../styles/Home.module.css";
 
@@ -39,7 +40,7 @@ const Section3 = () => {
                     style={{ objectFit: "contain" }}
                   />
                   <div className="mask flex-center blue-gradient-rgba">
-                    <a className="btn btn-outline-white btn-rounded">
+                    <a href="/services" target="_blank" className="btn btn-outline-white btn-rounded">
                       see more
                     </a>
                   </div>

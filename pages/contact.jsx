@@ -36,17 +36,17 @@ const Contact = () => {
         <Navbar />
       </div>
       <div style={{ marginTop: 130 }}>
-        <div className="container mt-5" data-aos="fade-up">
+        <div className="container mt-5" >
           <section className="dark-grey-text mb-5">
-            <h3 className="font-weight-bold text-center mb-4">Contact Us</h3>
-            <p className="text-center w-responsive mx-auto pb-5">
+            <h3 className="font-weight-bold text-center mb-4" data-aos="zoom-out">Contact Us</h3>
+            <p className="text-center w-responsive mx-auto pb-5" data-aos="fade-don">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
               error amet numquam iure provident voluptate esse quasi, veritatis
               totam voluptas nostrum quisquam eum porro a pariatur veniam.
             </p>
 
             <div className="row">
-              <div className="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+              <div className="col-lg-5 mb-lg-0 pb-lg-3 mb-4" data-aos-anchor-placement="top-center" data-aos="fade-up">
                 <div className="card">
                   <div className="card-body">
                     <div className={`form-header accent-1 ${styles.form_header}`}>
@@ -124,7 +124,7 @@ const Contact = () => {
                     allowfullscreen
                   ></iframe>
                 </div>
-                <div className="row text-center" data-aos="fade-up">
+                <div className="row text-center" data-aos="fade-in">
                   <div className="col-md-4">
                     <a>
                       <i className="fas py-3 fa-map-marker-alt fa-2x " style={{color:'#00225a'}}></i>

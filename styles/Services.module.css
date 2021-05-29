@@ -1,0 +1,38 @@
+.btn_about {
+    background-image: linear-gradient(
+      to right top,
+      #0f51b3,
+      #0069bb,
+      #007cba,
+      #008db3,
+      #309cac
+    );
+    color: #fff;
+  }
+  .features{
+    transition: 0.5s all ease-in-out;
+  }
+  .features:hover {
+    box-shadow: -1px 2px 13px -5px rgba(0,0,0,0.7);
+    -webkit-box-shadow: -1px 2px 13px -5px rgba(0,0,0,0.7);
+    -moz-box-shadow: -1px 2px 13px -5px rgba(0,0,0,0.7);
+    transition: 0.5s all ease-in-out !important;
+    transform: scale(0.9) !important;
+    cursor: pointer;
+
+  }
+  .other_services{
+    background-image: url('https://archello.s3.eu-central-1.amazonaws.com/images/2021/02/28/addline-group-interior-design-of-the-construction-company-office-offices-archello.1614525239.7456.jpg');
+      
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .list_eff:hover{
+    background-color: #0f51b3;
+    color: white;
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+  }

@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={`nav-item  mx-4 mt-1  ${styles.nav_link}`}>
-            <Link className={`nav-link`} href="#">
+            <Link className={`nav-link`} href="/services">
               Services
             </Link>
           </li>
