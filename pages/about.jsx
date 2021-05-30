@@ -2,6 +2,7 @@ import HeroSection from "../components/hero-section";
 import Navbar from "../components/navbar";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
+import Footer from "../components/footer";
 
 function About() {
   return (
@@ -299,6 +300,7 @@ function About() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

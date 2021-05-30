@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import emailjs from "emailjs-com";
 import AOS from "aos";
 import Head from "next/head";
+import Footer from "../components/footer";
 
 const Contact = () => {
   useEffect(() => {
@@ -184,6 +185,7 @@ const Contact = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

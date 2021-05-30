@@ -56,7 +56,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <ul className="navbar-nav ml-auto nav-flex-icons">
+        <ul className="navbar-nav ml-auto nav-flex-icons" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
           <li className="nav-item">
             <a className="nav-link waves-effect waves-light">
               <i className="fab fa-twitter text-white  mx-2"></i>

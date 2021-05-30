@@ -9,3 +9,7 @@
 .nav_link a:hover{
   color: white !important;
 }
+.footer_head{
+  background-image: linear-gradient(to right top, #0d418e, #0069b1, #0091cc, #02b8e2, #5be0f4);  width: 100%;
+
+}

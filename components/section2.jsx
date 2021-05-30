@@ -28,17 +28,22 @@ const Section2 = () => {
                   Company Overview
                 </h3>
 
-                <p className={`text-black ${styles.text_sec2}`}>
-                  Lorem ipsum dolor sit amet consectetur adip elit. Maiores
-                  deleniti explicabo voluptatem quisquam nulla asperiores
-                  aspernatur aperiam voluptate et consectetur minima delectus,
-                  fugiat eum soluta blanditiis adipisci, velit dolore magnam.
-                  Lorem ipsum dolor sit amet consectetur adip elit.
+                <p className={`text-black text-justify ${styles.text_sec2}`}>
+                  Concept Design & Constructor is a premier construction firm in
+                  Texas with an ambition to serve the infrastructure needs of
+                  clients throughout the state. From residential, commercial,
+                  industrial to everything in between, we approach each project
+                  with a laser focus on design with remarkable attention to
+                  detail and a passion for excellence. We take pride in the
+                  challenge of finding better solutions to design & construction
+                  and we are not satisfied until our client is 100% satisfied
+                  with all aspects.
                 </p>
 
                 <button
                   type="button"
                   className={`btn mx-0 text-white ${styles.btn_about}`}
+                  href="/about"
                 >
                   Learn More
                 </button>

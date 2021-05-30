@@ -5,6 +5,7 @@ import OtherServices from "../components/other-services";
 import ServicesCommon from "../components/services-common";
 import { ServicesData } from "../Data/services-data";
 import Head from "next/head";
+import Footer from "../components/footer";
 
 function Services() {
   return (
@@ -56,6 +57,7 @@ function Services() {
       {/* Other Services  */}
 
       <OtherServices />
+      <Footer />
     </div>
   );
 }
