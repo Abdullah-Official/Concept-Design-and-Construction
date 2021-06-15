@@ -17,6 +17,7 @@ const Section1 = () => {
                 fontFamily: "Poppins",
                 fontWeight: "bold",
               }}
+              data-aos="zoom-in-down"
             >
               {`From Concept \n to Creation`}
             </h1>
@@ -47,7 +48,7 @@ const Section1 = () => {
                 style={{ width: 200, borderRadius: 100 }}
               >
                <Link href="/about" style={{ width: "100%", height: "100%" }}>
-                  About us
+                  Learn More
                 </Link>
               </button>
               <button
@@ -56,7 +57,7 @@ const Section1 = () => {
                 style={{ width: 200, borderRadius: 100 }}
               >
                 <Link href="/contact" style={{ width: "100%", height: "100%" }}>
-                  Contact us
+                  Get a Quote
                 </Link>
               </button>
             </div>

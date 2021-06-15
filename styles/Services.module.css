@@ -21,18 +21,27 @@
     cursor: pointer;
 
   }
-  .other_services{
-    background-image: url('https://archello.s3.eu-central-1.amazonaws.com/images/2021/02/28/addline-group-interior-design-of-the-construction-company-office-offices-archello.1614525239.7456.jpg');
-      
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .list_eff{
+    list-style: none;
   }
-  .list_eff:hover{
-    background-color: #0f51b3;
-    color: white;
-    transition: 0.3s all ease-out;
+  .card_others:hover .list_eff {
+    color: #fff;
+  }
+  .card_others:hover {
+    background-image: linear-gradient(
+      to right top,
+      #0f51b3,
+      #0069bb,
+      #007cba,
+      #008db3,
+      #309cac
+    );
+    color: #fff !important;
+    border-top: 10px solid transparent;
+    transition: 4s all ease-in-out;
     cursor: pointer;
+  }
+  .card_others{
+    border-top: 10px solid #0f51b3;
+    color: #fff;
   }

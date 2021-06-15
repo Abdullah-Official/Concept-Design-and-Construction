@@ -54,9 +54,7 @@ const Contact = () => {
               className="text-center w-responsive mx-auto pb-5"
               data-aos="fade-don"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, veritatis
-              totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            We look forward to doing business with you. Contact us to learn more about how we can help you!
             </p>
 
             <div className="row">

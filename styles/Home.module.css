@@ -13,6 +13,10 @@
   color: #fff;
   text-align: center;
 }
+.text_sec2{
+  font-size: 15px !important;
+}
+
 .s3 {
   background-image: url("../public/images/section1-slide3.jpg");
   background-size: cover;
@@ -58,9 +62,18 @@
   font-weight: bold;
   font-size: 40px;
 }
+.section2_img_Cont{
+  box-shadow: -4px 7px 20px 0px rgba(0, 0, 0, 0.52) !important;
+  -webkit-box-shadow: -4px 7px 20px 0px rgba(0, 0, 0, 0.52) !important;
+
+border-radius: 15px !important;
+
+}
 
 .img_sec2 {
   object-fit: contain !important;
+  border-radius: 15px !important;
+
 }
 
 .sec2_main {
@@ -88,11 +101,10 @@
 }
 
 .section4 {
-  background-image: url("https://pngimg.com/uploads/building/building_PNG65.png");
+  background-image: url("../public/images/sec4bg.jpg");
   background-size: cover;
   object-fit: contain !important;
   height: 100vh !important;
-  background-position: center;
 }
 
 #fp-nav ul li a span,

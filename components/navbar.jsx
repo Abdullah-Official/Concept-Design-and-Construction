@@ -5,19 +5,23 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className={`mb-1 scrolling-navbar navbar navbar-expand-lg ${styles.nav_custom}`}>
-      <Link
-        className="navbar-brand text-white cursor-pointer"
-        style={{ color: "white", cursor:'pointer' }}
-        href="/"
-      >
-        <Image
-          src="/images/logo.svg"
-          height={60}
-          width={60}
-          style={{ objectFit: "contain", cursor:'pointer' }}
-        />
-      </Link>
+    <nav
+      className={`mb-1 scrolling-navbar navbar navbar-expand-lg ${styles.nav_custom}`}
+    >
+      <div style={{ height: "inherit", cursor: "pointer" }}>
+        <Link
+          className="navbar-brand text-white cursor-pointer"
+          style={{ color: "white", cursor: "pointer" }}
+          href="/"
+        >
+          <Image
+            src="/images/logo.svg"
+            height={60}
+            width={60}
+            style={{ objectFit: "contain", cursor: "pointer" }}
+          />
+        </Link>
+      </div>
       <button
         className="navbar-toggler"
         type="button"
@@ -56,9 +60,20 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <ul className="navbar-nav ml-auto nav-flex-icons" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+        <ul
+          className="navbar-nav ml-auto nav-flex-icons"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <li className="nav-item">
-            <a className="nav-link waves-effect waves-light">
+            <a
+              target="_blank"
+              href="https://twitter.com/ConceptDesConst"
+              className="nav-link waves-effect waves-light"
+            >
               <i className="fab fa-twitter text-white  mx-2"></i>
             </a>
           </li>
@@ -68,14 +83,17 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link waves-effect waves-light">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/Conceptdesign51"
+              className="nav-link waves-effect waves-light"
+            >
               <i className="fab fa-instagram text-white  mx-2"></i>
             </a>
           </li>
         </ul>
       </div>
     </nav>
- 
   );
 };
 

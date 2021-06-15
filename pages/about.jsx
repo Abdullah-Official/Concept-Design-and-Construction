@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import styles from "../styles/About.module.css";
 import Head from "next/head";
 import Footer from "../components/footer";
+import { TeamData } from "../Data/team";
 
 function About() {
   return (
@@ -68,14 +69,14 @@ function About() {
                 satisfied until our client is 100% satisfied with all aspects.
               </p>
 
-              <a
+              {/* <a
                 className="font-weight-bold"
                 href="#section2"
                 data-aos="zoom-in-right"
                 data-aos-delay="100"
               >
                 Learn more<i className="fas fa-angle-right ml-2"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
@@ -119,12 +120,6 @@ function About() {
                 By focusing on our core values in all that we do, we provide
                 results that exceed the expectations of our clients.
               </p>
-              <small
-                className="blue-text font-weight-bold float-right"
-                href="#"
-              >
-                ~ Concept Design
-              </small>
             </div>
           </div>
           <section className="p-md-3 ">
@@ -146,12 +141,6 @@ function About() {
                       A company that our customers want to work with and our
                       employees are to proud to work for.
                     </p>
-                    <small
-                      className="blue-text font-weight-bold float-right"
-                      href="#"
-                    >
-                      ~ Concept Design
-                    </small>
                   </div>
                 </div>
               </div>
@@ -185,12 +174,6 @@ function About() {
                         </p>
                       </li>
                     </ul>
-                    <small
-                      className="blue-text font-weight-bold float-right"
-                      href="#"
-                    >
-                      ~ Concept Design
-                    </small>
                   </div>
                 </div>
               </div>
@@ -204,99 +187,52 @@ function About() {
       <div className="container my-5">
         <section className="team-section text-center dark-grey-text">
           <h3 className="font-weight-bold pb-2 mb-4" data-aos="zoom-in-up">
-            Our Amazing Team
+            Meet the Team
           </h3>
           <p
             className="text-muted w-responsive mx-auto mb-5"
             data-aos="flip-up"
             data-aos-delay="200"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            Put our experience to the test when you work with the team at
+            Concept Design &amp; Constructor. Meet the leaders of CDC today to
+            discuss your project needs.
           </p>
 
           <div className="row">
-            <div className="col-lg-4 col-md-4 mb-4" data-aos="flip-left">
-              <div className="avatar mx-auto">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                  className="rounded-circle img-fluid z-depth-1"
-                  alt="Sample avatar"
-                />
-              </div>
-              <h5 className="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-              <p className="text-uppercase blue-text">
-                <strong>Graphic designer</strong>
-              </p>
-              <p className="grey-text">
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur, adipisci sed quia non numquam modi tempora eius.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a className="p-2 fa-lg fb-ic">
-                  <i className="fab fa-facebook-f blue-text"> </i>
-                </a>
-                <a className="p-2 fa-lg tw-ic">
-                  <i className="fab fa-twitter blue-text"> </i>
-                </a>
-                <a className="p-2 fa-lg ins-ic">
-                  <i className="fab fa-instagram blue-text"> </i>
-                </a>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-4 mb-4" data-aos="zoom-in-down">
-              <div className="avatar mx-auto">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
-                  className="rounded-circle img-fluid z-depth-1"
-                  alt="Sample avatar"
-                />
-              </div>
-              <h5 className="font-weight-bold mt-4 mb-3">John Doe</h5>
-              <p className="text-uppercase blue-text">
-                <strong>Web developer</strong>
-              </p>
-              <p className="grey-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                ipsa accusantium doloremque rem laudantium totam aperiam.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a className="p-2 fa-lg fb-ic">
-                  <i className="fab fa-facebook-f blue-text"> </i>
-                </a>
-                <a className="p-2 fa-lg ins-ic">
-                  <i className="fab fa-instagram blue-text"> </i>
-                </a>
-              </ul>
-            </div>
-
-            <div className="col-lg-4 col-md-4 mb-4" data-aos="flip-right">
-              <div className="avatar mx-auto">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                  className="rounded-circle img-fluid z-depth-1"
-                  alt="Sample avatar"
-                />
-              </div>
-              <h5 className="font-weight-bold mt-4 mb-3">Tom Adams</h5>
-              <p className="text-uppercase blue-text">
-                <strong>Backend developer</strong>
-              </p>
-              <p className="grey-text">
-                Perspiciatis repellendus ad odit consequuntur, eveniet earum
-                nisi qui consectetur totam officia voluptates perferendis
-                voluptatibus aut.
-              </p>
-              <ul className="list-unstyled mb-0">
-                <a className="p-2 fa-lg fb-ic">
-                  <i className="fab fa-facebook-f blue-text"> </i>
-                </a>
-                <a className="p-2 fa-lg ins-ic">
-                  <i className="fab fa-github blue-text"> </i>
-                </a>
-              </ul>
-            </div>
+            {TeamData.map((v, i) => {
+              return (
+                <div className="col-lg-4 col-md-4 mb-4" data-aos="flip-left">
+                  <div className="avatar mx-auto">
+                    <img
+                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                      className="rounded-circle img-fluid z-depth-1"
+                      alt="Sample avatar"
+                    />
+                  </div>
+                  <h5 className="font-weight-bold mt-4 mb-3">{v.name}</h5>
+                  <p className="text-uppercase blue-text">
+                    <strong>{v.position}</strong>
+                  </p>
+                  <p className="grey-text">
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                    amet, consectetur, adipisci sed quia non numquam modi
+                    tempora eius.
+                  </p>
+                  <ul className="list-unstyled mb-0">
+                    <a className="p-2 fa-lg fb-ic">
+                      <i className="fab fa-facebook-f blue-text"> </i>
+                    </a>
+                    <a className="p-2 fa-lg tw-ic">
+                      <i className="fab fa-twitter blue-text"> </i>
+                    </a>
+                    <a className="p-2 fa-lg ins-ic">
+                      <i className="fab fa-instagram blue-text"> </i>
+                    </a>
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>

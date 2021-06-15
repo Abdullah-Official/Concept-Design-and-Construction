@@ -2,6 +2,12 @@
     background-image: url('../public/images/about-jumb.jpg');
     background-size: cover !important;
     background-position: center !important;
+    /* height: 62vh !important; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    /* margin-top: 70px !important; */
     
 }
 .parallax_part{
@@ -19,4 +25,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+}
+
+
+@media(max-width:768px){
+    .hero_txt{
+        width: 100% !important;
+    }
 }

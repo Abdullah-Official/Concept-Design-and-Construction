@@ -21,5 +21,23 @@ a {
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background-color: #fff !important;
+  background-color: #3c7ce9 !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3c7ce9; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #052a93; 
 }

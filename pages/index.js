@@ -47,7 +47,7 @@ export default function Home() {
             clearInterval(g_interval);
 
             // 1000 milliseconds lapse
-            const lapse = 7000;
+            const lapse = 13000;
 
             if (destination.item.querySelectorAll(".fp-slides").length) {
               g_interval = setInterval(function () {

@@ -11,18 +11,16 @@ const Section2 = () => {
       <div className="container ">
         <section className="dark-grey-text">
           <div className="row pr-lg-5">
-            <div className={`col-md-7 ${styles.sec2_div1}`}>
-              <div className="view">
-                <Image
+            <div className={`col-md-12 col-lg-7 col-12 col-sm-12 ${styles.sec2_div1}`}>
+              <div className={`view  ${styles.section2_img_Cont}`}>
+                <img
                   src="/images/sec2-img.jpg"
-                  alt="Picture of the author"
-                  width={550}
-                  height={400}
+                  alt="Picture of the section2"
                   className={`img-fluid ${styles.img_sec2}`}
                 />
               </div>
             </div>
-            <div className="col-md-5 col-lg-5 col-sm-12 col-12 d-flex align-items-center">
+            <div className="col-md-12 col-lg-5 col-sm-12 col-12 d-flex align-items-center mt-3">
               <div>
                 <h3 className={`font-weight-bold mb-3 ${styles.heading_sec2}`}>
                   Company Overview
@@ -40,13 +38,15 @@ const Section2 = () => {
                   with all aspects.
                 </p>
 
-                <button
+               <div style={{display:'flex', justifyContent:'center'}}>
+               <a
                   type="button"
                   className={`btn mx-0 text-white ${styles.btn_about}`}
                   href="/about"
                 >
                   Learn More
-                </button>
+                </a>
+               </div>
               </div>
             </div>
           </div>

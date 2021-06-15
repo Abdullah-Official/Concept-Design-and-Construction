@@ -40,9 +40,11 @@ const Section3 = () => {
                     style={{ objectFit: "contain" }}
                   />
                   <div className="mask flex-center blue-gradient-rgba">
-                    <a href="/services" target="_blank" className="btn btn-outline-white btn-rounded">
+                    <Link href="/services" >
+                      <button className="btn btn-outline-white btn-rounded">
                       see more
-                    </a>
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <h5 style={{ color: "#053a93" }} className="text-uppercase font-weight-bold text-center mt-4 mb-0">
