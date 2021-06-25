@@ -18,7 +18,12 @@ function Services() {
       <Navbar />
 
       {/* Hero Section  */}
-      <HeroSection title="Our Services" />
+      <HeroSection
+        title="What We Do ?"
+        desc="Concept Design Constructor offers a variety of construction services to its clients. We approach every project with remarkable attention to detail
+
+        and a passion for excellence."
+      />
 
       {/* Features Section  */}
 
@@ -38,9 +43,8 @@ function Services() {
           data-aos-delay="100"
           className="text-center mx-auto w-responsive mb-5"
         >
-          Construction is a full service construction company offering building
-          solutions from start to finish. Our staff has been operating on USA
-          for last many years.
+          Concept Design & Constructor is a full service construction company
+          offering building solutions from start to finish.
         </p>
       </div>
       {ServicesData.map((v, i) => (

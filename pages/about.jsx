@@ -16,7 +16,12 @@ function About() {
       <Navbar />
 
       {/* Hero Section  */}
-      <HeroSection title="Who we are ?" />
+      <HeroSection
+        title="Who we are ?"
+        desc="Concept Design  Constructor is a full-service construction, remodel and general contracting company based in Texas with the
+
+      ambition to provide exceptional services to its clients."
+      />
 
       {/* Company Overview  */}
 
@@ -28,8 +33,8 @@ function About() {
               data-aos="zoom-in-up"
             >
               <img
-                src="https://ae01.alicdn.com/kf/HTB11uN5hA9WBuNjSspeq6yz5VXax.jpg"
-                // className="img-rounded"
+                src="https://images.unsplash.com/photo-1465829235810-1f912537f253?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbnN0cnVjdGlvbnxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                className={`card z-depth-1`}
                 alt=""
                 style={{
                   width: "100%",
@@ -125,7 +130,11 @@ function About() {
           <section className="p-md-3 ">
             <div className="row">
               <div className="col-lg-6 col-md-6">
-                <div className="card mb-4" data-aos="zoom-in-up">
+                <div
+                  className="card mb-4"
+                  style={{ height: "100%" }}
+                  data-aos="zoom-in-up"
+                >
                   <div className="card-header white">
                     <h4
                       className="font-weight-bold mb-0"
@@ -136,16 +145,31 @@ function About() {
                   </div>
                   <div className="card-body">
                     <p className="card-text">
-                      Our vision reflects the very essence of our existence To
-                      Be the most respected and sought-after construction firm.
-                      A company that our customers want to work with and our
-                      employees are to proud to work for.
+                      Our vision reflects the very essence of our existence.
                     </p>
+                    <ul>
+                      <li>
+                        <p className="card-text">
+                          To be the most respected and sought-after construction
+                          firm in the United States.
+                        </p>
+                      </li>
+                      <li>
+                        <p className="card-text">
+                          A company that our customers want to work with and our
+                          employees are proud to work for.
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6">
-                <div className="card mb-4" data-aos="zoom-in-up">
+                <div
+                  className="card mb-4"
+                  style={{ height: "100%" }}
+                  data-aos="zoom-in-up"
+                >
                   <div className="card-header white">
                     <h4
                       className="font-weight-bold mb-0"

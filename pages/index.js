@@ -38,7 +38,12 @@ export default function Home() {
           licenseKey={"YOUR_KEY_HERE"}
           scrollingSpeed={1000}
           navigation={true}
-          navigationTooltips={["Home", "About us", "Services", "News and Insights"]}
+          navigationTooltips={[
+            "Home",
+            "About us",
+            "Services",
+            "News and Insights",
+          ]}
           slidesNavigation={false}
           controlArrows={false}
           responsiveWidth={900}

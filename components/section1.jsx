@@ -17,9 +17,10 @@ const Section1 = () => {
                 fontFamily: "Poppins",
                 fontWeight: "bold",
               }}
-              data-aos="zoom-in-down"
+              data-aos="fade-in-down"
+              data-aos-delay="300"
             >
-              {`From Concept \n to Creation`}
+              From Concept <br /> to Creation
             </h1>
             <div
               style={{
@@ -37,11 +38,16 @@ const Section1 = () => {
                 fontSize: 20,
                 width: "70%",
               }}
+              data-aos="fade-in-up"
+              data-aos-delay="500"
             >
               We provide professional construction services and turn your dream
               into a beautiful reality.{" "}
             </p>
-            <div className={`${styles.btns_section1}`}>
+            <div
+            data-aos="fade-in-left"
+            data-aos-delay="800" 
+            className={`${styles.btns_section1}`}>
               <button
                 type="button"
                 className={`btn text-white ${styles.btn_about}`}
