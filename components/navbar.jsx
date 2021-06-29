@@ -78,7 +78,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link waves-effect waves-light">
+            <a target="_blank" href="https://www.facebook.com/cdconstructor" className="nav-link waves-effect waves-light">
               <i className="fab fa-facebook text-white  mx-2"></i>
             </a>
           </li>
@@ -89,6 +89,15 @@ const Navbar = () => {
               className="nav-link waves-effect waves-light"
             >
               <i className="fab fa-instagram text-white  mx-2"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/concept-design-constructor"
+              className="nav-link waves-effect waves-light"
+            >
+              <i className="fab fa-linkedin text-white  mx-2"></i>
             </a>
           </li>
         </ul>

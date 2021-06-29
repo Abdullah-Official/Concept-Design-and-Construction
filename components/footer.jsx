@@ -16,7 +16,7 @@ function Footer() {
               <a
                 className="fb-ic"
                 target="_blank"
-                // href="https://www.facebook.com/anees.a.khan.3388/"
+                href="https://www.facebook.com/cdconstructor"
               >
                 <i className="fab fa-facebook-f white-text mr-4"> </i>
               </a>
@@ -27,11 +27,8 @@ function Footer() {
               >
                 <i className="fab fa-twitter white-text mr-4"> </i>
               </a>
-              <a className="gplus-ic">
-                <i className="fab fa-google-plus-g white-text mr-4"> </i>
-              </a>
-              <a className="li-ic">
-                <i className="fab fa-linkedin-in white-text mr-4"> </i>
+              <a className="gplus-ic" href="https://www.linkedin.com/company/concept-design-constructor" target="_blank">
+                <i className="fab fa-linkedin white-text mr-4"> </i>
               </a>
               <a
                 className="ins-ic"
