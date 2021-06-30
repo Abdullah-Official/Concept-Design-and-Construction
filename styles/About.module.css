@@ -31,6 +31,77 @@
   -webkit-box-shadow: -4px 7px 20px 0px rgba(0, 0, 0, 0.52) !important;
 }
 
+.flip {
+    border: 1px solid #f1f1f1;
+    position: relative;
+    height: 240px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.6s all ease-in-out;
+    border-radius: 50% !important;
+    text-align: center !important;
+    padding: 10px;
+
+}
+
+.flip .front {
+    backface-visibility: hidden;
+    background-image: linear-gradient(
+    to right top,
+    #0f51b3,
+    #0069bb,
+    #007cba,
+    #008db3,
+    #309cac
+  );
+    box-sizing: border-box;
+    color: #fff;  
+    font-weight: bold;
+    height: 100%;
+    left: 0;
+    padding-top: 40%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    border-radius: 50% !important;
+}
+
+.flip .back {
+    -webkit-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    backface-visibility: hidden;
+    background-image: linear-gradient(
+        to right top,
+        #0f51b3,
+        #0069bb,
+        #007cba,
+        #008db3,
+        #309cac
+      );
+    box-sizing: border-box;
+    color: #fff;  
+    font-weight: bold;
+    height: 100%;
+    left: 0;
+    padding-top: 40%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    border-radius: 50% !important;
+}
+
+.flip:hover {
+    -webkit-transform: rotateY( 180deg );
+   transform: rotateY( 180deg ); 
+   transition: 0.6s all ease-in-out;
+   cursor: pointer !important;
+}
+
 
 @media(max-width:768px){
     .hero_txt{

@@ -115,22 +115,22 @@ function Footer() {
               style={{ width: 60 }}
             />
             <p>
-              <i className="fas fa-home mr-3"></i> New York, 94126 United States
+              <i className="fas fa-home mr-3"></i> 620 Hidden Cove Dr Princeton, <span style={{paddingLeft:35.5}}>75407, USA</span>
             </p>
             <p>
-              <i className="fas fa-envelope mr-3"></i> Tamur_shaikh87@yahoo.com
+              <i className="fas fa-envelope mr-3"></i> info@cdconstructor.com
             </p>
             <p>
-              <i className="fas fa-phone mr-3"></i> + 01 234 567 89
+              <i className="fas fa-phone mr-3"></i> +1 (469) 578-4757 <br /> <span style={{paddingLeft:34.5, paddingTop:40}}>+1 (469) 674-1200</span>
             </p>
           </div>
         </div>
       </div>
       <div className="footer-copyright text-center py-3">
-        © {cp_year} Copyright:
-        <a href="https://concept-design-and-constructors.vercel.app/">
+        © {cp_year} Copyright | Concept Design & Constructor | All Rights Reserved <br />
+        <a href="http://www.egriptechnologies.com/">
           {" "}
-          concept-design-and-constructors.vercel.app
+          Designed and Developed by <span style={{fontWeight:'600'}}>E-GRIP Technologies</span>
         </a>
       </div>
     </footer>

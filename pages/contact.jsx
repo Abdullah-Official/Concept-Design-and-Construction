@@ -154,8 +154,7 @@ const Contact = () => {
                         style={{ color: "#00225a" }}
                       ></i>
                     </a>
-                    <p>New York, 94126</p>
-                    <p className="mb-md-0">United States</p>
+                    <p>620 Hidden Cove Dr Princeton, TX 75407, USA </p>
                   </div>
                   <div className="col-md-4">
                     <a>
@@ -164,8 +163,9 @@ const Contact = () => {
                         style={{ color: "#00225a" }}
                       ></i>
                     </a>
-                    <p>+ 01 234 567 89</p>
-                    <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                    <p>+1 (469) 578-4757</p>
+                    <p>+1 (469) 674-1200</p>
+                    {/* <p className="mb-md-0">Mon - Fri, 8:00-22:00</p> */}
                   </div>
                   <div className="col-md-4">
                     <a>
@@ -175,7 +175,7 @@ const Contact = () => {
                       ></i>
                     </a>
                     <p>Tamur_shaikh87@yahoo.com</p>
-                    <p className="mb-0">sale@gmail.com</p>
+                    <p className="mb-0">info@cdconstructor.com</p>
                   </div>
                 </div>
               </div>

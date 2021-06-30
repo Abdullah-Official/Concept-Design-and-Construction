@@ -6,7 +6,7 @@ export const FeatureData = [
     },
     {
         heading: 'Modern Technology',
-        text:"By embracing modern technology, we are here to help our clients move into the future with their new projects",
+        text:"By embracing the modern technology, we are here to help our clients move into the future with their new projects",
         img:'/images/settings.png'
     },
     {

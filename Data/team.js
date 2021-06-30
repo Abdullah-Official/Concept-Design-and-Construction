@@ -9,6 +9,7 @@ export const TeamData = [
     },
     {
         name: 'Taimoor Shaikh',
-        position: 'Business Manager'
+        position: 'Business',
+        manager: 'Manager'
     },
 ]

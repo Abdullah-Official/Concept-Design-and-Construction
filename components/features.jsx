@@ -24,8 +24,8 @@ function Features() {
               >
                 <Image
                   src={v.img}
-                  width={i === 0 ? 90 : 80}
-                  height={i === 0 ? 90 : 80}
+                  width={i === 0 ? 86 : 80}
+                  height={i === 0 ? 80 : 80}
                 />
                 <h5
                   style={{ fontFamily: "sans-serif" }}

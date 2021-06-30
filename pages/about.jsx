@@ -17,7 +17,7 @@ function About() {
 
       {/* Hero Section  */}
       <HeroSection
-        title="Who we are ?"
+        title="Who We Are ?"
         desc="Concept Design  Constructor is a full-service construction, remodel and general contracting company based in Texas with the
 
       ambition to provide exceptional services to its clients."
@@ -33,9 +33,9 @@ function About() {
               data-aos="zoom-in-up"
             >
               <img
-                src="https://images.unsplash.com/photo-1465829235810-1f912537f253?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNvbnN0cnVjdGlvbnxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                src="/images/company-overview.jpg"
                 className={`card z-depth-1`}
-                alt=""
+                alt="Picture of the author"
                 style={{
                   width: "100%",
                   height: 330,
@@ -208,7 +208,7 @@ function About() {
 
       {/* Teams Section  */}
 
-      <div className="container my-5">
+      <div className="container my-5 mb-2">
         <section className="team-section text-center dark-grey-text">
           <h3 className="font-weight-bold pb-2 mb-4" data-aos="zoom-in-up">
             Meet the Team
@@ -226,34 +226,19 @@ function About() {
           <div className="row">
             {TeamData.map((v, i) => {
               return (
-                <div className="col-lg-4 col-md-4 mb-4" data-aos="flip-left">
-                  <div className="avatar mx-auto">
-                    <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                      className="rounded-circle img-fluid z-depth-1"
-                      alt="Sample avatar"
-                    />
-                  </div>
-                  <h5 className="font-weight-bold mt-4 mb-3">{v.name}</h5>
-                  <p className="text-uppercase blue-text">
-                    <strong>{v.position}</strong>
-                  </p>
-                  <p className="grey-text">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci sed quia non numquam modi
-                    tempora eius.
-                  </p>
-                  <ul className="list-unstyled mb-0">
-                    <a className="p-2 fa-lg fb-ic">
-                      <i className="fab fa-facebook-f blue-text"> </i>
-                    </a>
-                    <a className="p-2 fa-lg tw-ic">
-                      <i className="fab fa-twitter blue-text"> </i>
-                    </a>
-                    <a className="p-2 fa-lg ins-ic">
-                      <i className="fab fa-instagram blue-text"> </i>
-                    </a>
-                  </ul>
+                <div className={`${styles.flip} mt-2`} href="#">
+                  <span className={`${styles.front}`}>
+                    <h3>{v.name}</h3>
+                  </span>
+
+                  <span className={`${styles.back}`}>
+                    <h4 style={{ fontWeight: "bold", letterSpacing: 2 }}>
+                      {v.position}
+                    </h4>
+                    <h4 style={{ fontWeight: "bold", letterSpacing: 2 }}>
+                      {v.manager}
+                    </h4>
+                  </span>
                 </div>
               );
             })}
