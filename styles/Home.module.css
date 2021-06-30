@@ -138,6 +138,9 @@ border-radius: 15px !important;
   .text_sec2 {
     font-size: 13px !important;
   }
+  .tweetsCont{
+    margin-bottom: 50px !important;
+  }
 }
 @media (max-width: 320px) {
   .section1_subTxt {

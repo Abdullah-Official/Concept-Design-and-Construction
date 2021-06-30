@@ -1,5 +1,6 @@
 import React from "react";
 import { Tweet } from "react-twitter-widgets";
+import styles from '../styles/Home.module.css'
 
 const Section4 = () => {
   const year = new Date();
@@ -33,7 +34,7 @@ const Section4 = () => {
               </p>
             </div>
 
-            <div className="col-md-8 mb-md-0 col-lg-6 col-12 col-sm-12 d-flex justify-content-center align-items-center ">
+            <div className={`col-md-8 mb-md-0  col-lg-6 col-12 col-sm-12 d-flex justify-content-center align-items-center  ${styles.tweetsCont}`}>
               <a
                 className="twitter-timeline"
                 data-width="400"
