@@ -226,18 +226,23 @@ function About() {
           <div className="row">
             {TeamData.map((v, i) => {
               return (
-                <div className={`${styles.flip} mt-2`} href="#">
+                <div className={`${styles.flip} mt-3`} href="#">
                   <span className={`${styles.front}`}>
                     <h3>{v.name}</h3>
                   </span>
 
                   <span className={`${styles.back}`}>
-                    <h4 style={{ fontWeight: "bold", letterSpacing: 2 }}>
+                   {
+                     v.position === "Business Manager"? (
+                      <h5 style={{ fontWeight: "bold", letterSpacing: 2 }}>
+                      {v.position}
+                    </h5>
+                     ) : (
+                      <h4 style={{ fontWeight: "bold", letterSpacing: 2 }}>
                       {v.position}
                     </h4>
-                    <h4 style={{ fontWeight: "bold", letterSpacing: 2 }}>
-                      {v.manager}
-                    </h4>
+                     )
+                   }
                   </span>
                 </div>
               );

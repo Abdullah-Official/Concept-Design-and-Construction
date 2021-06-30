@@ -4,12 +4,17 @@ function Footer() {
   const year = new Date();
   const cp_year = year.getFullYear();
   return (
-    <footer className="page-footer font-small unique-color-dark wow fadeIn" data-aos="fade-up">
+    <footer
+      className="page-footer font-small unique-color-dark wow fadeIn"
+      data-aos="fade-up"
+    >
       <div className={`${styles.footer_head}`}>
         <div className="container">
           <div className="row py-4 d-flex align-items-center">
             <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 className="mb-0">Get connected with us on social networks!</h6>
+              <h6 className="mb-0">
+                Get connected with us on social networks!
+              </h6>
             </div>
 
             <div className="col-md-6 col-lg-7 text-center text-md-right">
@@ -27,7 +32,11 @@ function Footer() {
               >
                 <i className="fab fa-twitter white-text mr-4"> </i>
               </a>
-              <a className="gplus-ic" href="https://www.linkedin.com/company/concept-design-constructor" target="_blank">
+              <a
+                className="gplus-ic"
+                href="https://www.linkedin.com/company/concept-design-constructor"
+                target="_blank"
+              >
                 <i className="fab fa-linkedin white-text mr-4"> </i>
               </a>
               <a
@@ -115,22 +124,28 @@ function Footer() {
               style={{ width: 60 }}
             />
             <p>
-              <i className="fas fa-home mr-3"></i> 620 Hidden Cove Dr Princeton, <span style={{paddingLeft:35.5}}>75407, USA</span>
+              <i className="fas fa-home mr-3"></i> 620 Hidden Cove Dr Princeton,{" "}
+              <span style={{ paddingLeft: 35.5 }}>75407, USA</span>
             </p>
             <p>
               <i className="fas fa-envelope mr-3"></i> info@cdconstructor.com
             </p>
             <p>
-              <i className="fas fa-phone mr-3"></i> +1 (469) 578-4757 <br /> <span style={{paddingLeft:34.5, paddingTop:40}}>+1 (469) 674-1200</span>
+              <i className="fas fa-phone mr-3"></i> +1 (469) 578-4757 <br />{" "}
+              <span style={{ paddingLeft: 34.5, paddingTop: 40 }}>
+                +1 (469) 674-1200
+              </span>
             </p>
           </div>
         </div>
       </div>
       <div className="footer-copyright text-center py-3">
-        © {cp_year} Copyright | Concept Design & Constructor | All Rights Reserved <br />
+        © {cp_year} Copyright | Concept Design & Constructor | All Rights
+        Reserved <br />
         <a href="http://www.egriptechnologies.com/">
           {" "}
-          Designed and Developed by <span style={{fontWeight:'600'}}>E-GRIP Technologies</span>
+          Designed and Developed by{" "}
+          <span style={{ fontWeight: "600" }}>E-GRIP Technologies</span>
         </a>
       </div>
     </footer>
