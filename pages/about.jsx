@@ -17,7 +17,7 @@ function About() {
 
       {/* Hero Section  */}
       <HeroSection
-        title="Who We Are ?"
+        title="Who We Are"
         desc="Concept Design  Constructor is a full-service construction, remodel and general contracting company based in Texas with the
 
       ambition to provide exceptional services to its clients."

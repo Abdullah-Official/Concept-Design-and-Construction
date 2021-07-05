@@ -5,17 +5,20 @@ import styles from "../styles/Home.module.css";
 const Section3 = () => {
      const section3Data = [
         {
-          img: "/images/sec3_card_img1.jpg",
-          title: "Construction",
+          img: "/images/sec3_card_img2.jpg",
+          title: "General Contractor",
           col: "col-md-12",
+          id: 1,
         },
         {
-          img: "/images/sec3_card_img2.jpg",
-          title: "House Renovation",
+          img: "/images/sec3_card_img1.jpg",
+          title: "House Construction & Renovation",
+          id:4
         },
         {
           img: "/images/sec3_card_img3.jpg",
           title: "Architecture",
+          id:2
         },
       ];
     
@@ -40,11 +43,11 @@ const Section3 = () => {
                     style={{ objectFit: "contain" }}
                   />
                   <div className="mask flex-center blue-gradient-rgba">
-                    <Link href="/services" >
+                    <a target="_blank" href={`/services/#${v.id}`} >
                       <button className="btn btn-outline-white btn-rounded">
                       see more
                       </button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <h5 style={{ color: "#053a93" }} className="text-uppercase font-weight-bold text-center mt-4 mb-0">

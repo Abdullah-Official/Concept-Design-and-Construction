@@ -2,8 +2,9 @@ import Image from "next/image";
 import styles from "../styles/Services.module.css";
 
 function ServicesCommon(props) {
+  console.log(props)
   return (
-    <div className="container mt-5">
+    <div id={props.id} className="container mt-5">
       <section
         className="dark-grey-text"
         data-aos="fade-in"

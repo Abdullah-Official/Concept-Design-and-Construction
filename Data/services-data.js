@@ -70,7 +70,7 @@ export const ServicesData = [
         and renovation: to turn your dream home into a reality and
         to improve your home value and your quality of life.`,
     btnTxt: "Let’s Renovate Your Home",
-    img: "/images/sec3_card_img2.jpg",
+    img: "/images/sec3_card_img1.jpg",
   },
   {
     id: 5,
