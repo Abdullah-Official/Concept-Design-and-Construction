@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -14,11 +13,9 @@ const Navbar = () => {
           style={{ color: "white", cursor: "pointer" }}
           href="/"
         >
-          <Image
-            src="/images/logo.svg"
-            height={60}
-            width={60}
-            style={{ objectFit: "contain", cursor: "pointer" }}
+          <img
+            src="/images/logo.png"
+            style={{ objectFit: "contain", cursor: "pointer", height:80, width:200 }}
           />
         </Link>
       </div>

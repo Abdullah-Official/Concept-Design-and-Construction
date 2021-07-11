@@ -55,7 +55,7 @@ function Footer() {
         <div className="row mt-3">
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              Concept Design & Constructors
+              Concept Design & Constructor
             </h6>
             <hr
               className="blue darken-2 accent-2 mb-4 mt-0 d-inline-block mx-auto"
