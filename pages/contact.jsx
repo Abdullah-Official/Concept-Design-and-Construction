@@ -163,7 +163,6 @@ const Contact = () => {
                         style={{ color: "#00225a" }}
                       ></i>
                     </a>
-                    <p>+1 (469) 578-4757</p>
                     <p>+1 (469) 674-1200</p>
                     {/* <p className="mb-md-0">Mon - Fri, 8:00-22:00</p> */}
                   </div>

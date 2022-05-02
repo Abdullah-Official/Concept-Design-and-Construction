@@ -131,8 +131,8 @@ function Footer() {
               <i className="fas fa-envelope mr-3"></i> info@cdconstructor.com
             </p>
             <p>
-              <i className="fas fa-phone mr-3"></i> +1 (469) 578-4757 <br />{" "}
-              <span style={{ paddingLeft: 34.5, paddingTop: 40 }}>
+              <i className="fas fa-phone mr-3"></i>
+              <span style={{ paddingLeft: 4.5, paddingTop: 40 }}>
                 +1 (469) 674-1200
               </span>
             </p>

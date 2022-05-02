@@ -874,11 +874,6 @@
   "resolved" "https://registry.npmjs.org/foreach/-/foreach-2.0.5.tgz"
   "version" "2.0.5"
 
-"fsevents@~2.3.1":
-  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  "version" "2.3.2"
-
 "fullpage.js@^3.1.0":
   "integrity" "sha512-pd8rbaDTHxK/eYtfDu7os0CEXjLA5e/3FNe+Mo8RnpntmOayxtyL1D8Y7JzANOCvKLn8zO5aFrPZGo3NhOCwgQ=="
   "resolved" "https://registry.npmjs.org/fullpage.js/-/fullpage.js-3.1.1.tgz"
